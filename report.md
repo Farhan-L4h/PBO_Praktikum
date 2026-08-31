@@ -80,7 +80,26 @@ Lakukan langkah-langkah berikut agar tugas praktikum yang dikerjakan menjadi leb
 9. Terapkan setiap method pada setiap objek yang dibuat.
 10. Contoh yang disebutkan pada poin 1 tidak boleh digunakan dalam pengerjaan tugas praktikum ini.
 
+## Dokumentasi Objek
+
+### Objek 1 - Laptop
+
+![](./IMG%20Laporan/Kantor.jpg)
+
+### Objek 2 - Laptop Gaming
+
+![](./IMG%20Laporan/Gaming.jpg)
+
+### Objek 3 - Keyboard
+
+![](./IMG%20Laporan/Keyboard.jpg)
+
+### Objek 4 - Mouse
+
+![](./IMG%20Laporan/Mouse.jpg)
+
 ## Hasil Pengerjaan
+
 
 ![](./IMG%20Laporan/1.png)
 
