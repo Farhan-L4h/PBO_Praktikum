@@ -1,0 +1,17 @@
+package id.ac.polinema;
+
+public class Main {
+    public static void main(String[] args) {
+        Rectangle original = new Rectangle(6, 4);
+        
+        System.out.println("Area: " + original.area());
+        
+        Rectangle copy = original;
+        copy.width = 10;
+        System.out.println("Via Original: " + original.area());
+        System.out.println("Via Copy: " + copy.area());
+
+        Student s = new Student("Nadia", "S001", 3.8);
+        System.out.println(s.describe());
+    }
+}
