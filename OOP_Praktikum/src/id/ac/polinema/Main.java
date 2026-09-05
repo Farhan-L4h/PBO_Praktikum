@@ -12,5 +12,12 @@ public class Main {
         }
         Student s = new Student("Nadia", "S001", 3.8);
         System.out.println(s.describe());
+
+        // cirlcle
+
+        Circle c = new Circle(5);
+
+        System.out.println("Area: " + c.area());
+        System.out.println("Circumference: " + c.circumference());
     }
 }
