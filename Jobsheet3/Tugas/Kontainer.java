@@ -1,11 +1,11 @@
 public class Kontainer {
-     private String nomorResi;
+    private String nomorResi;
     private String namaPemilik;
     private double kapasitasMaksimal;
     private double beratMuatanSaatIni;
 
     public Kontainer(String nomorResi, String namaPemilik,
-                     double kapasitasMaksimal) {
+            double kapasitasMaksimal) {
         this.nomorResi = nomorResi;
         this.namaPemilik = namaPemilik;
         this.kapasitasMaksimal = kapasitasMaksimal;
@@ -33,18 +33,30 @@ public class Kontainer {
             beratMuatanSaatIni += berat;
         } else {
             System.out.println(
-                "Maaf, berat muatan melebihi kapasitas maksimal kontainer."
-            );
+                    "Maaf, berat muatan melebihi kapasitas maksimal kontainer.");
         }
     }
 
+    // public void turunkanMuatan(double berat) {
+    // if (berat <= beratMuatanSaatIni) {
+    // beratMuatanSaatIni -= berat;
+    // } else {
+    // System.out.println(
+    // "Maaf, berat muatan yang diturunkan melebihi muatan saat ini."
+    // );
+    // }
+    // }
+
     public void turunkanMuatan(double berat) {
-        if (berat <= beratMuatanSaatIni) {
-            beratMuatanSaatIni -= berat;
-        } else {
+
+        double batasMaksimal = beratMuatanSaatIni * 0.5;
+
+        if (berat > batasMaksimal) {
             System.out.println(
-                "Maaf, berat muatan yang diturunkan melebihi muatan saat ini."
-            );
+                    "Maaf, demi keselamatan, pembongkaran muatan satu kali jalan "
+                            + "tidak boleh melebihi 50% dari muatan saat ini!");
+        } else {
+            beratMuatanSaatIni -= berat;
         }
     }
 }

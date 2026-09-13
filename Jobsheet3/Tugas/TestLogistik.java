@@ -2,7 +2,7 @@ public class TestLogistik {
      public static void main(String[] args) {
 
         Kontainer kontainerA =
-            new Kontainer("RESI-9988", "PT. Maju Bersama", 5000);
+            new Kontainer("RESI-9988", "PT. Maju Bersama", 2500);
 
         System.out.println("Nama Pemilik Kontainer: "
                 + kontainerA.getNamaPemilik());
