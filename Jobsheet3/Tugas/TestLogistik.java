@@ -1,8 +1,12 @@
+import java.util.Scanner;
+
 public class TestLogistik {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
 
         Kontainer kontainerA =
-            new Kontainer("RESI-9988", "PT. Maju Bersama", 2500);
+            new Kontainer("RESI-9988", "PT. Maju Bersama", 5000);
 
         System.out.println("Nama Pemilik Kontainer: "
                 + kontainerA.getNamaPemilik());
@@ -10,24 +14,22 @@ public class TestLogistik {
         System.out.println("Kapasitas Maksimal: "
                 + kontainerA.getKapasitasMaksimal() + " kg");
 
-        System.out.println("\nMemasukkan muatan baru sebesar 6.000 kg...");
-        kontainerA.tambahMuatan(6000);
+        System.out.print("\nMasukkan berat muatan (kg): ");
+        double tambah = input.nextDouble();
+
+        kontainerA.tambahMuatan(tambah);
+
         System.out.println("Berat muatan saat ini: "
                 + kontainerA.getBeratMuatanSaatIni() + " kg");
 
-        System.out.println("\nMemasukkan muatan baru sebesar 4.000 kg...");
-        kontainerA.tambahMuatan(4000);
+        System.out.print("\nMasukkan berat muatan yang ingin dibongkar (kg): ");
+        double turun = input.nextDouble();
+
+        kontainerA.turunkanMuatan(turun);
+
         System.out.println("Berat muatan saat ini: "
                 + kontainerA.getBeratMuatanSaatIni() + " kg");
 
-        System.out.println("\nMembongkar/memindahkan barang sebesar 500 kg...");
-        kontainerA.turunkanMuatan(500);
-        System.out.println("Berat muatan saat ini: "
-                + kontainerA.getBeratMuatanSaatIni() + " kg");
-
-        System.out.println("\nMembongkar/memindahkan barang sebesar 1.500 kg...");
-        kontainerA.turunkanMuatan(1500);
-        System.out.println("Berat muatan saat ini: "
-                + kontainerA.getBeratMuatanSaatIni() + " kg");
+        input.close();
     }
 }
