@@ -18,3 +18,7 @@
 ## Laporan Jobsheet 2
 
 [Laporan Praktikum 2](./OOP_Praktikum/Laporan.md)
+
+## Laporan Jobsheet 3
+
+[Laporan Praktikum 3](./Jobsheet3/Laporan.md)
