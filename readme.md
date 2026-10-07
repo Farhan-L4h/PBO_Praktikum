@@ -22,3 +22,11 @@
 ## Laporan Jobsheet 3
 
 [Laporan Praktikum 3](./Jobsheet3/Laporan.md)
+
+## Laporan Jobsheet 4
+
+[Laporan Praktikum 4](./Jobsheet4/Laporan.md)
+
+## Laporan Jobsheet 6
+
+[Laporan Praktikum 6](./Jobsheet6/Laporan.md)
