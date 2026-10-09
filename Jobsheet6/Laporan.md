@@ -5,7 +5,7 @@
 | Keterangan | Data            |
 | ---------- | --------------- |
 | **Nama**   | Muhammad Farhan |
-| **NIM**    | 264107027002    |
+| **NIM**    | 264107023002    |
 | **No**     | 14              |
 | **Kelas**  | TI 2G           |
 
