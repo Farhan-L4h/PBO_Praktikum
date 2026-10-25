@@ -146,7 +146,3 @@
 ## Kesimpulan
 
 Overloading menggunakan nama method sama dengan parameter berbeda, sedangkan overriding mengganti implementasi method superclass pada subclass. `this()` membantu memanggil konstruktor lain, `super` mengakses implementasi superclass, dan `@Override` membantu mendeteksi kesalahan overriding.
-
-## Catatan
-
-Screenshot pada laporan menggunakan folder `img`. Pastikan gambar berisi output program dan tambahkan screenshot eksperimen error atau tabel pengamatan yang diminta dosen jika belum tercakup.
