@@ -1,0 +1,30 @@
+package praktikum.percobaan3;
+
+import praktikum.*;
+import praktikum.percobaan2.Employee;
+import praktikum.percobaan2.PermanentEmployee;
+import praktikum.percobaan2.IntershipEmployee;
+import praktikum.percobaan2.ElectricityBill;
+import praktikum.percobaan2.Payable;
+
+public class MainPercobaan3 {
+    public static void main(String[] args) {
+        PermanentEmployee pEmp = new PermanentEmployee("Dedik", 500);
+        IntershipEmployee iEmp = new IntershipEmployee("Sunarto", 5);
+        ElectricityBill eBill = new ElectricityBill(5, "R-1");
+
+        Employee[] e = { pEmp, iEmp };
+        Payable[] p = { pEmp, eBill };
+
+        for (Employee emp : e) {
+            System.out.println(emp.getEmployeeInfo());
+        }
+
+        int total = 0;
+        for (Payable tagihan : p) {
+            total += tagihan.getPaymentAmount();
+        }
+        System.out.println("Total tagihan bulan ini = " + total);
+    }
+
+}
